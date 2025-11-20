@@ -3,6 +3,7 @@ Treehouse Techdegree:
 FSJS Project 2 - Data Pagination and Filtering
 */
 
+// Variable that stores the number of students per page
 const studentsPerPage = 9;
 
 // Function responsible for rendering the student cards to the page
