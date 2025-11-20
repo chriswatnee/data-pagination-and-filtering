@@ -3,11 +3,12 @@ Treehouse Techdegree:
 FSJS Project 2 - Data Pagination and Filtering
 */
 
+const studentsPerPage = 9;
+
 // Function responsible for rendering the student cards to the page
 function showPage(list, page) {
-  const itemsPerPage = 9;
-  const startIndex = (page * itemsPerPage) - itemsPerPage;
-  const endIndex = page * itemsPerPage;
+  const startIndex = (page * studentsPerPage) - studentsPerPage;
+  const endIndex = page * studentsPerPage;
   const studentList = document.querySelector(".student-list");
   // Remove any students that might have previously been displayed
   studentList.innerHTML = "";
@@ -33,12 +34,5 @@ function showPage(list, page) {
     }
   }
 }
-
-/*
-Create the `addPagination` function
-This function will create and insert/append the elements needed for the pagination buttons
-*/
-
-
 
 // Call functions
