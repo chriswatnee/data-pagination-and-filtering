@@ -18,14 +18,14 @@ function showPage(list, page) {
       // Create student item html
       const html = `
         <li class="student-item cf">
-        <div class="student-details">
-          <img class="avatar" src="${student.picture.large}" alt="Profile Picture">
-          <h3>${student.name.first} ${student.name.last}</h3>
-          <span class="email">${student.email}</span>
-        </div>
-        <div class="joined-details">
-          <span class="date">Joined ${student.registered.date}</span>
-        </div>
+          <div class="student-details">
+            <img class="avatar" src="${student.picture.large}" alt="Profile Picture">
+            <h3>${student.name.first} ${student.name.last}</h3>
+            <span class="email">${student.email}</span>
+          </div>
+          <div class="joined-details">
+            <span class="date">Joined ${student.registered.date}</span>
+          </div>
         </li>
       `;
       // Insert the html into the .student-list ul
