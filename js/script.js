@@ -30,7 +30,7 @@ function showPage(list, page) {
         </li>
       `;
       // Insert the html into the .student-list ul
-      studentList.insertAdjacentHTML('beforeend', html);
+      studentList.insertAdjacentHTML("beforeend", html);
     }
   }
 }
